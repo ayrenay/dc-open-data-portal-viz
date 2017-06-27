@@ -4,97 +4,126 @@
     <title>Hazardous Materials Incidents</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Josefin+Sans|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
   </head>
 
   <body>
-    <h1>A Little on DC Hazardous Materials Incidents</h1>
+    <nav class="visuallyhidden focusable">
+      <a href="#content">Skip to content</a>
+    </nav>
     
-     <h2>Overview</h2>
-      <div class="overview">
-        <div class="image">
-          <a href="DC-Hazmat-Incidents.png"><img src="DC-Hazmat-Incidents.png" alt="A summary of incidents involving vehichles carrying hazardous materials to Washington, D.C."></a>
-          <div class="caption">
-            <p>Summary visualization of incidents involving vehichles carrying Hazardous Materials to Washington, D.C.</p>
-            <p>(click to enlarge image)</p>
+    <header id='home' class='site-header'>
+      <div class='header-container'>
+        <nav class='nav-primary'>
+          <ul class='list-reset'>
+            <li><a href='#overview' data-scroll>Overview</a></li>
+            <li><a href='#getting-started' data-scroll>Getting Started</a></li>
+            <li><a href='#additional-det' data-scroll>Additional Details</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class='container'>
+      <h1>A Little on DC Hazardous Materials Incidents</h1>
+
+       <h2 id='overview'>Overview</h2>
+        <div class="overview">
+          <div class="images">
+            <a href="DC-Hazmat-Incidents.png"  class='modaal-image'><img src="DC-Hazmat-Incidents.png" alt="A summary of incidents involving vehichles carrying hazardous materials to Washington, D.C."></a>
+            <div class="caption">
+              <p>Summary visualization of incidents involving vehichles carrying Hazardous Materials to Washington, D.C.</p>
+              <p>(click to enlarge image)</p>
+            </div>
+          </div>
+          <div class="content">
+
+            <p>The data depicted here show a few highlights on vehicular incidents involving hazardous materials in the District of Columbia. These data were collected from the U.S. Department of Transportation's <a href='https://hazmatonline.phmsa.dot.gov/IncidentReportsSearch/IncrSearch.aspx'>Incident Reports Database</a>.</p>
+            <p>The dataset contains detail including:</p>
+            <ul>
+              <li>Shipment origin</li>
+              <li>Carrier details</li>
+              <li>Hazardous material type</li>
+              <li>Quantity released</li>
+              <li>Total fatalities and injuries</li>
+            </ul>
+            <p>More detail on field definitions can be found in the official <a href="https://hazmatonline.phmsa.dot.gov/IncidentReportsSearch/Documents/DataDictionary.pdf">Incident Reports Database data dictionary</a>.</p>
+
+            <div class="button">
+              <a href="http://data.codefordc.org/dataset/hazmat-incidents-in-washington-dc">Download this dataset on Open Data DC</a>
+            </div>        
           </div>
         </div>
-        <div class="content">
 
-          <p>The data depicted here show a few highlights on vehicular incidents involving hazardous materials in the District of Columbia. These data were collected from the U.S. Department of Transportation's <a href='https://hazmatonline.phmsa.dot.gov/IncidentReportsSearch/IncrSearch.aspx'>Incident Reports Database</a>.</p>
-          <p>The dataset contains detail including:</p>
-          <ul>
-            <li>Shipment origin</li>
-            <li>Carrier details</li>
-            <li>Hazardous material type</li>
-            <li>Quantity released</li>
-            <li>Total fatalities and injuries</li>
-          </ul>
-          <p>More detail on field definitions can be found in the official <a href="https://hazmatonline.phmsa.dot.gov/IncidentReportsSearch/Documents/DataDictionary.pdf">Incident Reports Database data dictionary</a>.</p>
+        <h2 id='getting-started'>Getting Started</h2> 
+          <div>
+            <p>There are plenty of opportunities for further exploration and analysis - here are a few points to get you started:</p>
+            <ul>
+              <li>What drove the spikes in 1983 and 1990?</li>
+              <li>Are damages (total incident cost) concentrated in a single year or state or in a few years or states, or was the total cost evenly spread across the 45 years we have available?</li>
+              <li>Which materials or class of materials are more likely to be involved in an incident? [not pictured]</li>
+              <li>What are the most common causes of incidents? [not pictured]</li>
+              <li>Are incidents more likely to occur during a certain time of day? [not pictured]</li>
+            </ul>
+          </div>
 
-          <div class="button">
-            <a href="http://data.codefordc.org/dataset/hazmat-incidents-in-washington-dc">Download this dataset on Open Data DC</a>
-          </div>        
-        </div>
-      </div>
-       
-      <h2>Getting Started</h2> 
+        <h2 id='additional-det'>Additional Details</h2>
+        <h3 id='fields-used'>Fields Used in This Visualization</h3>
         <div>
-          <p>There are plenty of opportunities for further exploration and analysis - here are a few points to get you started:</p>
-          <ul>
-            <li>What drove the spikes in 1983 and 1990?</li>
-            <li>Are damages (total incident cost) concentrated in a single year or state or in a few years or states, or was the total cost evenly spread across the 45 years we have available?</li>
-            <li>Which materials or class of materials are more likely to be involved in an incident? [not pictured]</li>
-            <li>What are the most common causes of incidents? [not pictured]</li>
-            <li>Are incidents more likely to occur during a certain time of day? [not pictured]</li>
-          </ul>
-        </div>
-        
-      <h2>Additional Details</h2>
-      <h3>Fields Used in This Visualization</h3>
-      <div>
-        <div class="image">
-          <a href="DC-Hazmat-Incidents-labeled.png"><img src="DC-Hazmat-Incidents-labeled.png" alt="Hazardous materials summary with individual visualizations identified"></a>
-          <div class="caption">
-            <p>Hazardous materials summary with individual visualizations identified</p>
-            <p>(click to enlarge image)</p>
+          <div class="images">
+            <a href="DC-Hazmat-Incidents-labeled.png" class='modaal-image'><img src="DC-Hazmat-Incidents-labeled.png" alt="Hazardous materials summary with individual visualizations identified"></a>
+            <div class="caption">
+              <p>Hazardous materials summary with individual visualizations identified</p>
+              <p>(click to enlarge image)</p>
+            </div>
+          </div>
+          <div class="content">
+
+            <p>A number of fields were used to make the dataset summary visualization:</p>
+            <ol class="viz-detail">
+              <li>Incidents by State</li>
+                <ol>
+                  <li>Row count</li>
+                  <li>Origin state</li>
+                </ol>
+              <li>Total Incidents</li>
+                <ol>
+                  <li>Row count</li>
+                </ol>
+              <li>Total Monetary Damages</li>
+                <ol>
+                  <li>Total amount of damages</li>
+                </ol>
+              <li>Annual Average</li>
+                <ol>
+                  <li>Row count</li>
+                  <li>Date of incident</li>
+                </ol>
+              <li>Annual Incidents</li>
+                <ol>
+                  <li>Row count</li>
+                  <li>Date of incident</li>
+                </ol>
+            </ol>
+
           </div>
         </div>
-        <div class="content">
 
-          <p>A number of fields were used to make the dataset summary visualization:</p>
-          <ol class="viz-detail">
-            <li>Incidents by State</li>
-              <ol>
-                <li>Row count</li>
-                <li>Origin state</li>
-              </ol>
-            <li>Total Incidents</li>
-              <ol>
-                <li>Row count</li>
-              </ol>
-            <li>Total Monetary Damages</li>
-              <ol>
-                <li>Total amount of damages</li>
-              </ol>
-            <li>Annual Average</li>
-              <ol>
-                <li>Row count</li>
-                <li>Date of incident</li>
-              </ol>
-            <li>Annual Incidents</li>
-              <ol>
-                <li>Row count</li>
-                <li>Date of incident</li>
-              </ol>
-          </ol>
-        
+        <h3 id='data-owner'>Data Owner</h3>
+        <div>
+          <p>These data were reported by the District of Columbia to the U.S. Department of Transportation. <a href="mailto:jalbertbowden@gmail.com"> J. Albert Bowden II</a> is the current maintainer of this dataset.</p>
         </div>
       </div>
-      
-      <h3>Data Owner</h3>
-      <div>
-        <p>These data were reported by the District of Columbia to the U.S. Department of Transportation. <a href="mailto:jalbertbowden@gmail.com"> J. Albert Bowden II</a> is the current maintainer of this dataset.</p>
-      </div>
+    <!-- Scripts --->
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src='https://cdn.jsdelivr.net/smooth-scroll/10.2.1/smooth-scroll.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/modaal/0.3.1/js/modaal.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/headroomjs/0.7.0/headroom.min.js'></script>
+    <script src='script.js'></script>
   </body>
 
 </html>
