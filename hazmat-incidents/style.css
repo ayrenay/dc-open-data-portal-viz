@@ -18,6 +18,7 @@ h2 {
 h3 {
   color: #454545;
   font-size: 1.1em;
+  margin-bottom: 1%;
 }
 
 a {
@@ -26,10 +27,14 @@ a {
   font-weight: 600
 }
 
+p {
+  margin-top: 0;
+}
+
 .container {
   margin: 2em auto;
-  padding-left: 6em;
-  padding-right: 6em;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .site-header {
@@ -37,7 +42,27 @@ a {
   border-bottom:  1.3px solid #8B0000;
 }
 
+#back-to-showcase {
+  text-align: center;
+  padding-top: 1em;
+}
 
+#back-to-showcase a {  
+  font-weight: 300;
+}
+
+footer {  
+  padding: 0;
+  margin: 15px auto 0;
+  height: 0%;
+  background-color: #DCDCDC;
+}
+
+footer p {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
 
 nav a {
   color: white;
@@ -59,7 +84,7 @@ nav > ul {
   display: block;
   font-family: 'Bubbler One', serif;
   color: #696969;
-  font-size: .65em;
+  font-size: 1em;
 }
 
 .button {
@@ -81,19 +106,22 @@ nav > ul {
   background-color: #c4000c;
 }
 
-.overview {
-  float: right;
-  clear: both;
-  margin-bottom: 1em;
+.image-left {
+  overflow: auto;
 }
 
-.viz-detail > li{
+.viz-detail ol li {
+  list-style-type: lower-alpha;
+  font-weight: 500;
+}
+
+ol > li{
   list-style-type: upper-alpha;
   font-weight: 600;
 }
 
-ol > li{
-  list-style-type: lower-alpha;
+#getting-started-questions {
+  padding-bottom: 1em;
 }
 
 @media (max-width: 38.75em) {
@@ -104,13 +132,17 @@ ol > li{
     }
     
     .content {
-      padding-right: 1em;
       font-size: 1.5em;  
     }
   
     .container {
       margin: 0;
-      padding: 1em;
+      padding: 25px;
+    }
+  
+    footer p {
+      padding: 1% 25px;
+      margin: 0;
     }
   
     h1 {
@@ -132,6 +164,7 @@ ol > li{
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      text-align: center;
     }
   
 }
@@ -149,7 +182,7 @@ ol > li{
       margin-right: 1.3em;
     }
     
-    .content {
+    .image-pair {
       margin-left: 30%;
       padding-left: 2em;
     }
