@@ -3,5 +3,5 @@ Visualizations done to showcase the interesting and unique datasets on the [Code
 
 You can see all showcases [here](http://data.codefordc.org/showcase).
 
-Links to all my showcases:
+Links to my showcases:
 - [Hazardous Materials Incidents in DC](https://ayrenay.github.io/dc-open-data-portal-viz/hazmat-incidents/)
